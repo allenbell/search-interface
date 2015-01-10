@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>OpenVideo Search</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+	<form action="search.php" method="post">
+		<fieldset>
+			<legend>Search</legend>
+                <label>Words in title<input type="text" id="titleSearch" 
+                name="titleSearch"/></label><br />			    
+                <label>Keywords<input type="text" id="keywordSearch" 
+                name="keywordSearch"/></label><br />			    
+                <label>Full text<input type="text" id="fullSearch" 
+                placeholder="e.g. nasa AND voyager" name="fullSearch"/></label><br />
+                			    			    			    
+		</fieldset>
+		<fieldset>
+		    <legend>Filters</legend>
+                <label>Years: from <input type="text" id="fromYear" placeholder="yyyy"
+                name="fromYear"/></label>	
+                <label>to <input type="text" id="toYear" placeholder="yyyy"
+                name="toYear"/></label><br />			
+                <label>Duration (seconds): from <input type="text" id="fromSeconds" 
+                name="fromSeconds"/></label>	
+                <label>to <input type="text" id="toSeconds" 
+                name="toSeconds"/></label><br />			        
+		        <label>Just show me videos with sound<input type="checkbox" 
+		        name="withSound" value="Yes"></label><br />
+		        <label>Just show me videos that are in color<input type="checkbox" 
+		        name="withColor" value="Yes"></label><br />	
+		</fieldset>
+		<input type="submit" name="submit" value="Go">
+		</form>	        
+	</body>
+</html>
